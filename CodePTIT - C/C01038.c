@@ -14,7 +14,12 @@ int main()
         dem++;
         a /= 10;
     }
+    if (a > 0) {
     n = n - cuoi - dau * pow(10, dem - 1) + dau + cuoi * pow(10, dem - 1);
     printf("%lld", n);
+	}
+	else {
+		printf("NO");
+	}
     return 0;
 }
